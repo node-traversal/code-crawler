@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The react parser plugin should parse complex react prop-types 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "react",
+      "var": "React",
+    },
+    Object {
+      "name": "prop-types",
+      "var": "PropTypes",
+    },
+  ],
+  "props": Array [
+    Object {
+      "name": "optionalArray",
+      "type": "array",
+    },
+    Object {
+      "name": "optionalBool",
+      "type": "bool",
+    },
+    Object {
+      "name": "optionalFunc",
+      "type": "func",
+    },
+    Object {
+      "name": "optionalNumber",
+      "type": "number",
+    },
+    Object {
+      "name": "optionalObject",
+      "type": "object",
+    },
+    Object {
+      "name": "optionalString",
+      "type": "string",
+    },
+    Object {
+      "name": "optionalSymbol",
+      "type": "symbol",
+    },
+    Object {
+      "name": "optionalNode",
+      "type": "node",
+    },
+    Object {
+      "name": "optionalElement",
+      "type": "element",
+    },
+    Object {
+      "name": "optionalElementType",
+      "type": "elementType",
+    },
+    Object {
+      "args": "Message",
+      "name": "optionalMessage",
+      "type": "instanceOf",
+    },
+    Object {
+      "args": Array [
+        "News",
+        "Photos",
+      ],
+      "name": "optionalEnum",
+      "type": "oneOf",
+    },
+    Object {
+      "args": Array [
+        "string",
+        "number",
+        "{\\"type\\":\\"CallExpression\\",\\"callee\\":{\\"type\\":\\"MemberExpression\\",\\"start\\":1424,\\"end\\":1444,\\"loc\\":{\\"start\\":{\\"line\\":45,\\"column\\":8},\\"end\\":{\\"line\\":45,\\"column\\":28}},\\"object\\":{\\"type\\":\\"Identifier\\",\\"start\\":1424,\\"end\\":1433,\\"loc\\":{\\"start\\":{\\"line\\":45,\\"column\\":8},\\"end\\":{\\"line\\":45,\\"column\\":17},\\"identifierName\\":\\"PropTypes\\"},\\"name\\":\\"PropTypes\\"},\\"property\\":{\\"type\\":\\"Identifier\\",\\"start\\":1434,\\"end\\":1444,\\"loc\\":{\\"start\\":{\\"line\\":45,\\"column\\":18},\\"end\\":{\\"line\\":45,\\"column\\":28},\\"identifierName\\":\\"instanceOf\\"},\\"name\\":\\"instanceOf\\"},\\"computed\\":false},\\"arguments\\":[{\\"type\\":\\"Identifier\\",\\"start\\":1445,\\"end\\":1452,\\"loc\\":{\\"start\\":{\\"line\\":45,\\"column\\":29},\\"end\\":{\\"line\\":45,\\"column\\":36},\\"identifierName\\":\\"Message\\"},\\"name\\":\\"Message\\"}]}",
+      ],
+      "name": "optionalUnion",
+      "type": "oneOfType",
+    },
+    Object {
+      "args": "number",
+      "name": "optionalArrayOf",
+      "type": "arrayOf",
+    },
+    Object {
+      "args": "number",
+      "name": "optionalObjectOf",
+      "type": "objectOf",
+    },
+    Object {
+      "args": Array [
+        Object {
+          "name": "optionalProperty",
+          "type": "string",
+        },
+        Object {
+          "name": "requiredProperty",
+          "required": true,
+          "type": "number",
+        },
+      ],
+      "name": "optionalObjectWithShape",
+      "type": "shape",
+    },
+    Object {
+      "args": Array [
+        Object {
+          "name": "optionalProperty",
+          "type": "string",
+        },
+        Object {
+          "name": "requiredProperty",
+          "required": true,
+          "type": "number",
+        },
+      ],
+      "name": "optionalObjectWithStrictShape",
+      "type": "exact",
+    },
+    Object {
+      "name": "requiredFunc",
+      "required": true,
+      "type": "func",
+    },
+    Object {
+      "name": "requiredAny",
+      "required": true,
+      "type": "any",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse hook react code 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "react",
+      "var": "React",
+    },
+    Object {
+      "name": "react-dom",
+      "var": "ReactDOM",
+    },
+    Object {
+      "name": "draft-js",
+      "var": "Editor",
+    },
+    Object {
+      "name": "draft-js",
+      "var": "EditorState",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse pre-es6 react code 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "create-react-class",
+      "var": "createReactClass",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse react prop-types with enum arguments 1`] = `
+Object {
+  "props": Array [
+    Object {
+      "args": Array [
+        "News",
+        "Photos",
+      ],
+      "name": "optionalEnum",
+      "type": "oneOf",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse react prop-types with required specifier 1`] = `
+Object {
+  "props": Array [
+    Object {
+      "name": "requiredAny",
+      "required": true,
+      "type": "any",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse react prop-types with shape 1`] = `
+Object {
+  "props": Array [
+    Object {
+      "args": Array [
+        Object {
+          "name": "firstName",
+          "type": "string",
+        },
+        Object {
+          "name": "age",
+          "type": "number",
+        },
+      ],
+      "name": "objectWithShape",
+      "type": "shape",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse react prop-types with single argument 1`] = `
+Object {
+  "props": Array [
+    Object {
+      "args": "Message",
+      "name": "optionalMessage",
+      "type": "instanceOf",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse scoped react code 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "react",
+      "var": "React",
+    },
+    Object {
+      "name": "@material-ui/core/Button",
+      "var": "Button",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse simple react code 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "react",
+      "var": "React",
+    },
+    Object {
+      "name": "prop-types",
+      "var": "PropTypes",
+    },
+  ],
+  "props": Array [
+    Object {
+      "name": "firstName",
+      "type": "string",
+    },
+  ],
+}
+`;
+
+exports[`The react parser plugin should parse simple react prop-types 1`] = `
+Object {
+  "props": Array [
+    Object {
+      "name": "firstName",
+      "type": "string",
+    },
+  ],
+}
+`;

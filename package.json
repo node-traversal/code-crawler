@@ -1,0 +1,33 @@
+{
+  "name": "code-crawler",
+  "version": "1.0.0",
+  "description": "Extracts metadata from modules",
+  "bin": {
+    "react-parser": ""
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "eslint": "eslint",
+    "read": "node ./bin/react-parser.js tree examples/simple",
+    "readE": "node ./bin/react-parser.js tree examples/material-ui/packages/material-ui",
+    "test": "jest --rootDir src/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/parser": "^7.7.3",
+    "@babel/traverse": "^7.7.2",
+    "colors": "^1.4.0",
+    "commander": "^4.0.1",
+    "glob": "^7.1.6",
+    "lodash": "^4.17.15",
+    "treeify": "^1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "jest": "^24.9.0"
+  }
+}

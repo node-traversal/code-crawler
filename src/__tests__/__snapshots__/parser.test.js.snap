@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The parser should parse aliased default import 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "react",
+      "var": "React",
+    },
+    Object {
+      "name": "prop-types",
+      "var": "PropTypes",
+    },
+  ],
+}
+`;
+
+exports[`The parser should parse export with constant instead of import 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "@my-project/the-package/TreeView",
+      "var": "default",
+    },
+  ],
+}
+`;
+
+exports[`The parser should parse re-export with aliased import 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "@my-project/the-package/foobar",
+      "var": "foo",
+    },
+    Object {
+      "name": "@my-project/the-package/foobar",
+      "var": "bar",
+    },
+  ],
+}
+`;
+
+exports[`The parser should parse re-export with star import 1`] = `
+Object {
+  "deps": Array [
+    Object {
+      "name": "@my-project/the-package/other",
+    },
+  ],
+}
+`;

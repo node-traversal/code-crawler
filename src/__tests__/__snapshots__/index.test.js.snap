@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The scanner should parse simple code 1`] = `
+Object {
+  "undefined": Object {
+    "deps": Array [
+      Object {
+        "name": "react",
+        "var": "React",
+      },
+      Object {
+        "name": "prop-types",
+        "var": "PropTypes",
+      },
+    ],
+    "props": Array [
+      Object {
+        "name": "firstName",
+        "type": "string",
+      },
+    ],
+  },
+}
+`;

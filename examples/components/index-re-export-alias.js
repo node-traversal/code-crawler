@@ -1,0 +1,1 @@
+export { foo as aliasedFoo, bar } from './foobar';
